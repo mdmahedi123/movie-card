@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://wallpaperaccess.com/full/288727.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.card-container {
+  width: 600px;
+  height: ;
+  background: rgba(19, 18, 18, 0.774);
+  margin: 150px auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(41, 40, 40), -5px -5px 20px rgb(94, 93, 93);
+  overflow: hidden;
+}
+.card-container .card-img img {
+  width: 600px;
+  transition: 0.3s;
+}
+.card-container .card-img {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card-container .card-img:hover img {
+  filter: blur(4px);
+}
+
+.card-img .imdb {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: brown;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom-right-radius: 5px;
+}
+.card-img .rotten {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: brown;
+  padding: 5px 12px;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom-left-radius: 5px;
+}
+
+.card-container .card-details {
+  text-align: center;
+  padding: 10px;
+}
+
+.card-container .card-details h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card-details .action {
+  color: tomato;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card-details .delail {
+  text-align: justify;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-details a {
+  text-decoration: none;
+  color: white;
+  background: tomato;
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.card-details a:active {
+  outline: 3px solid rgb(255, 86, 57);
+}
+
+.card-details a:hover {
+  background: transparent;
+  border: 2px solid tomato;
+}
